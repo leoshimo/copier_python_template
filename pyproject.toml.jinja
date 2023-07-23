@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "{{ project_name }}"
+version = "0.1.0"
+description = ""
+authors = ["leoshimo <56844000+leoshimo@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "{{ project_name }}", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.23.1"}
+black = {extras = ["jupyter"], version = "^23.7.0"}
+pydantic = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipykernel = "^6.24.0"
+ruff = "^0.0.280"
+black = "^23.7.0"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

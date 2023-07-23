@@ -1,0 +1,8 @@
+from fastapi import FastAPI
+from {{ project_name }}.hello import hello_world
+
+app = FastAPI()
+
+@app.get("/")
+async def index():
+    return { "message": hello_world() }
