@@ -19,3 +19,15 @@ $ copier copy gh:leoshimo/copier_python_template my_project
 $ cd my_project
 $ poetry install
 ```
+
+## API Keys
+
+Add `.env` with `SOME_API_KEY=API_KEY`. Then use `python-dotenv`:
+
+```python
+import os
+from dotenv import load_dotenv
+load_dotenv()
+os.environ.get('SOME_API_KEY')
+```
+
