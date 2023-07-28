@@ -10,8 +10,8 @@ lint: 	## Lint project
 	poetry run black . --check
 	poetry run ruff .
 
-server: ## Start app server
-	poetry run uvicorn {{ project_name }}.server:app --reload
+server: ## Start FastAPI Server
+	poetry run uvicorn {{ project_name }}.app:app --reload
 
 notebook: ## Start notebook
 	poetry run jupyter notebook --notebook-dir=notebooks
