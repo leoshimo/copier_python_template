@@ -17,7 +17,7 @@
 ```sh
 $ copier copy gh:leoshimo/copier_python_template my_project
 $ cd my_project
-$ poetry install
+$ make setup
 ```
 
 ## Running Tasks
