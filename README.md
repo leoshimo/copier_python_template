@@ -20,6 +20,10 @@ $ cd my_project
 $ poetry install
 ```
 
+## Running Tasks
+
+See `make help` for list of tasks.
+
 ## API Keys
 
 Add `.env` with `SOME_API_KEY=API_KEY`. Then use `python-dotenv`:
